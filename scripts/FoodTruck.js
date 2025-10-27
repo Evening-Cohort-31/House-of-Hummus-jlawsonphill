@@ -1,12 +1,14 @@
-import { Sales } from "./Sales.js"
+// Imports
+import { SalesHistory } from "./Sales.js"
 
-export const FoodTruck = () => {
-    const salesHTML = Sales()
+// Function to create the main layout of the food truck page
+export const FoodTruck = async () => {
+    const salesHTML = await SalesHistory()
 
     return `
         <header class="header">
             <img src="./images/hummus.png" class="logo" />
-            <h1 class="title">Laura Kathryn's House of Hummus</h1>
+            <h1 class="title">Laura Kathry's House of Hummus</h1>
         </header>
 
         <article>
